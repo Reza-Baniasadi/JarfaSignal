@@ -11,3 +11,8 @@ class MongoDb:
         data = {"question": question, "vector": vector}
         self.collection.insert_one(data)
 
+        
+    def get_all_question(self):
+        return list(self.collection.find({}, {"_id": 0}))
+        
+
