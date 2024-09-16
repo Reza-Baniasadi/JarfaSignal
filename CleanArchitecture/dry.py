@@ -1,7 +1,5 @@
 import csv
 
-
-
 def getdatafile(filename):
     array_data = []
     with open(filename,'r')as f:
