@@ -1,10 +1,7 @@
 venv
 data.csv
 .env
-telegramdata.csv
 VoiceText.text
 save_model
-telegramdatafa.csv
 CleanArchitecture/__pycache__
-telegramdatafaNews.csv
-telegramdatapersia.csv
+Data/Csv-File
