@@ -29,8 +29,7 @@ def getNumberFile(filevioce,all_voice_data,text):
           file = file.split('.')[0]
           match = re.search(r'(/d+)$',file)  
           if match:
-               number = match.group(1)
-          number = int(number)
+               number = int(match.group(1))
           print(number)
           if os.path.exists(f'{filevioce}/{number}.{text}'):
                continue
@@ -39,13 +38,8 @@ def getNumberFile(filevioce,all_voice_data,text):
                 for onetext in all_voice_data:
                     f.write(onetext)
                elif text == 'ogg':
-                    for file in os.listdir(filevioce):
-                         name = file.split('.')[0]
-                         match = re.search(f'(\d+)$',name)
-                         if match :
-                              match.group(1)
-                         n = int(match)
+                         n = number
                          for voice in all_voice_data:
                               with open(f'{filevioce}/{n}.{text}',"wb") as f :
                                    f.write(voice)
-                                   n += 1
+                              n += 1
