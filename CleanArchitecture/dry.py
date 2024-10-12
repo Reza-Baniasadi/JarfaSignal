@@ -43,3 +43,4 @@ def getNumberFile(filevioce,all_voice_data,text):
                               with open(f'{filevioce}/{n}.{text}',"wb") as f :
                                    f.write(voice)
                               n += 1
+
