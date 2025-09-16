@@ -9,4 +9,4 @@ def getdatafile(filename):
          for row in filedata :
              array_data.append(row)
     return array_data
-             
+         
